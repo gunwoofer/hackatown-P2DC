@@ -1,0 +1,4 @@
+<agm-map [latitude]="latitude" [longitude]="longitude" (mapClick)="onChoseLocation($event)">
+    <agm-marker *ngIf="locationChosen" [latitude]="latitude" [longitude]="longitude">
+    </agm-marker>
+</agm-map>
