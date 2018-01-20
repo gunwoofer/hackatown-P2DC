@@ -8,8 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor () {}
+    public afficherInscription: boolean;
+
+  constructor () {
+  }
 
   public ngOnInit(): void {
+      this.afficherInscription = false;
+  }
+
+  public changerFormulaire(): void {
+      this.afficherInscription = !this.afficherInscription;
   }
 }
