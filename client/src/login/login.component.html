@@ -1,17 +1,17 @@
 <div class="login-page">
     <div class="form">
-      <form class="register-form" *ngIf="afficherInscription">
-        <input type="text" placeholder="name"/>
-        <input type="password" placeholder="password"/>
-        <input type="text" placeholder="email address"/>
-        <button>create</button>
+      <form class="register-form" *ngIf="afficherInscription" ngNativeValidate (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <input type="text" placeholder="name" [(ngModel)]="nameSignUp" name="nameSignUp" required>
+        <input type="password" placeholder="password" [(ngModel)]="passwordSignUp" name="passwordSignUp" required>
+        <input type="text" placeholder="emailSignUp" name="emailSignUp" required>
+        <button type="submit" [disabled]="!f.form.valid" class="btn" (click)="signup()">create</button>
         <p class="message">Already registered? <button (click)="changerFormulaire()">Login !</button></p>
       </form>
-      <form class="login-form" *ngIf="!afficherInscription">
-        <input type="text" placeholder="username"/>
-        <input type="password" placeholder="password"/>
-        <button>login</button>
+      <form class="login-form" *ngIf="!afficherInscription" ngNativeValidate (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <input type="text" placeholder="username" [(ngModel)]="usernameLogin" name="usernameLogin" required>
+        <input type="password" placeholder="password" [(ngModel)]="passwordLogin" name="passwordLogin" required>
+        <button type="submit" [disabled]="!f.form.valid" class="btn" (click)="login()">login</button>
         <p class="message">Not registered? <button (click)="changerFormulaire()">Register !</button></p>
       </form>
     </div>
-  </div>
+</div>
