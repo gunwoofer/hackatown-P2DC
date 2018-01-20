@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { MapLocationComponent } from './map-location/map-location.component';
+import { DescriptionComponent } from './description/description.component';
 
 
 
@@ -19,7 +20,8 @@ import { MapLocationComponent } from './map-location/map-location.component';
     HomeComponent,
     LoginComponent,
     WelcomeComponent,
-    MapLocationComponent
+    MapLocationComponent,
+    DescriptionComponent
   ],
   imports: [
     BrowserModule,
