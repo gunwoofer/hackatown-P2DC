@@ -3,24 +3,17 @@ import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { CubeComponent } from './cube/cube.component';
-
-import {RenderService} from './cube/render.service';
-import {BasicService} from './basic.service';
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    CubeComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     HttpModule
   ],
   providers: [
-    RenderService,
-    BasicService
   ],
   bootstrap: [AppComponent]
 })
