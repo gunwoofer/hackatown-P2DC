@@ -26,11 +26,6 @@ export class MapLocationComponent implements OnInit {
       // this.challenges
     }
 
-    public geoLocation(): void {
-      const location = '2200 rue mansfield';
-      this.mapService.getLocation(location).then((response) => console.log(response.results[0]));
-    }
-
     public ngOnInit(): void {
 
        /* this.route.params.subscribe(params => {
