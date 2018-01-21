@@ -1,8 +1,11 @@
 <div class="card">
-  <img src="../assets/gars5.jpg" alt="John" style="width:100%">
+  <img src={{userProfile.nomPhoto}} alt="John" >
   <h1>John Doe</h1>
   <p class="title">CEO & Founder, Example</p>
+  <div class="wrapperB"   [ngStyle]="{'background-image': 'url(' + userProfile.nomPhoto + ') '}"></div>
+  <!--"background-image: '../assets/gars1.jpg';"-->
   <p>Harvard University</p>
+  <p>{{userProfile.name}}</p>
   <div style="margin: 24px 0;">
     <a href="#"><i class="fa fa-dribbble"></i></a>
     <a href="#"><i class="fa fa-twitter"></i></a>

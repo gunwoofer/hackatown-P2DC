@@ -77,7 +77,7 @@ export class Application {
     // create routes
     const index: indexRoute.Index = new indexRoute.Index();
 
-
+    router.post('/description', index.ReceiveTask.bind(index.ReceiveTask));
     // use router middleware
     this.app.use(router);
 

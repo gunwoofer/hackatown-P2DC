@@ -1,4 +1,8 @@
+import { TaskManagerService } from './taskManager.service';
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms/src/directives/ng_form';
+import { Task } from './task';
 
 @Component({
   selector: 'app-description',
@@ -7,9 +11,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DescriptionComponent implements OnInit {
 
-  constructor() { }
+  public showSuccess: boolean;
 
-  ngOnInit() {
+  constructor(private router: Router, private taskManagerService: TaskManagerService) {}
+
+
+  public ngOnInit(): void {
+    this.showSuccess = false;
+  }
+
+  public changeRouting(): void {
+    this.router.navigateByUrl('/task');
+  }
+
+  public submitYourTask(f: NgForm): void {
+    this.taskManagerService.sendTask(new Task(f.value.taskName, f.value.adress, f.value.date, f.value.details, f.value.salary))
+        .then( data => this.showSuccess = true);
   }
 
 }
