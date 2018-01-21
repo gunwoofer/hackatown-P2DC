@@ -1,9 +1,5 @@
 <div class="container">
-<div>
-    <button id="retour" class="btn-primary col-xs-offset-1" (click)="back()">Back</button>
-</div>
-
-<agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="13">
+  <agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="13">
     <agm-marker class="mapMarker" *ngFor="let challenge of challenges;" [latitude]="challenge.latitude" [longitude]="challenge.longitude" [label]="challenge.name">
         <agm-info-window>
             <div class="marker-info">
