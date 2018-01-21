@@ -3,9 +3,22 @@
 }
 
 #pannel {
-  margin:5px 10px;
+  margin:5px 20px;
 }
 
 .panel-heading {
   text-align: center;
+  font-weight: 800;
+}
+
+.moreInfoButon{
+  width:100%;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.salary {
+  color: #00a502;
 }
