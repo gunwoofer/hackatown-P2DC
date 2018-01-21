@@ -28,11 +28,7 @@ export let profilesTest: UserProfile[] = [
   new UserProfile(5, 'Pauline', 'Aubergiste', 12, '2224 rue saint Antoine', true, 'fille5'),
   new UserProfile(6,'Karim', 'Artisan maçon', 10, '2880 Avenue Van Horne', false, 'gars3'),
   new UserProfile(7,'Zack', 'PDG', 6, '2591 Rue de Soissons', false, 'gars4'),
-  new UserProfile(8,'Fanny', 'Esthéticienne', 11, '5634 Avenue Canterbury', false, 'fille4'),
-
-
-
-
+  new UserProfile(8,'Fanny', 'Esthéticienne', 11, '5634 Avenue Canterbury', false, 'fille4')
 ];
 
 
