@@ -1,3 +1,5 @@
+import { ListeChallengeService } from './listeChallenge/listeChallenge.service';
+import { ListeChallengeComponent } from './listeChallenge/listeChallenge.component';
 import { LoginComponent } from './login/login.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -24,7 +26,8 @@ import { UserCardComponent } from './user-card/user-card.component';
     WelcomeComponent,
     MapLocationComponent,
     DescriptionComponent,
-    UserCardComponent
+    UserCardComponent,
+    ListeChallengeComponent
   ],
   imports: [
     BrowserModule,
@@ -37,6 +40,7 @@ import { UserCardComponent } from './user-card/user-card.component';
     HttpModule
   ],
   providers: [
+      ListeChallengeService
   ],
   bootstrap: [AppComponent]
 })

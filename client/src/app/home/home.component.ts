@@ -17,8 +17,8 @@ export class HomeComponent implements OnInit {
     this.router.navigate(['/description']);
   }
 
-  private   clickReleveDefiButton() : void {
-    this.router.navigate(['/map']);
+  private clickReleveDefiButton(): void {
+    this.router.navigate(['/liste']);
 
   }
 

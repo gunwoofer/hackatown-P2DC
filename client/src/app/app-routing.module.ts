@@ -1,3 +1,4 @@
+import { ListeChallengeComponent } from './listeChallenge/listeChallenge.component';
 import { MapLocationComponent } from './map-location/map-location.component';
 import { LoginComponent } from './login/login.component';
 import { NgModule } from '@angular/core';
@@ -12,8 +13,10 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'map', component: MapLocationComponent },
   { path: 'description', component: DescriptionComponent },
-  {path: 'login', component: LoginComponent},
-  {path: 'user', component: UserCardComponent}
+  { path: 'login', component: LoginComponent },
+  { path: 'user', component: UserCardComponent },
+  { path: 'liste', component: ListeChallengeComponent }
+
 ];
 
 @NgModule({

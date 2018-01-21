@@ -3,23 +3,23 @@
     <form ngNativeValidate (ngSubmit)="submitYourTask(f)" #f="ngForm">
         <div class="form-group">
             <label for="task">Task:</label>
-            <input type="text" class="form-control" id="tache" ngModel aria-describedby="tachehelp" placeholder="Type of service">
+            <input type="text" class="form-control" id="tache"  aria-describedby="tachehelp" placeholder="Type of service">
         </div>
         <div class="form-group">
             <label for="adress">Adress:</label>
-            <input class="form-control" rows="5" id="adress" ngModel placeholder="Adress">
+            <input class="form-control" rows="5" id="adress"  placeholder="Adress">
         </div>
         <div class="form-group">
             <label for="date">Date:</label>
-            <input class="form-control" rows="5" id="date" ngModel placeholder="Date" type="datetime-local">
+            <input class="form-control" rows="5" id="date" placeholder="Date" type="datetime-local">
         </div>
         <div class="form-group">
             <label for="precision">More details:</label>
-            <textarea class="form-control" rows="5" id="precision" ngModel placeholder="You can give more details about what you need"></textarea>
+            <textarea class="form-control" rows="5" id="precision" placeholder="You can give more details about what you need"></textarea>
         </div>
         <div class="form-group">
             <label for="prix">Proposed salary:</label>
-            <input type="prix" class="form-control" id="cad" ngModel placeholder="CAD">
+            <input type="prix" class="form-control" id="cad" placeholder="CAD">
         </div>
         <button type="submit" class="btn btn-primary" [disabled]="!f.form.valid">Submit !</button>
     </form>
