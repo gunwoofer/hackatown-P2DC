@@ -24,9 +24,4 @@ export class DescriptionComponent implements OnInit {
     this.router.navigateByUrl('/task');
   }
 
-  public submitYourTask(f: NgForm): void {
-    this.taskManagerService.sendTask(new Task(f.value.taskName, f.value.adress, f.value.date, f.value.details, f.value.salary))
-        .then( data => this.showSuccess = true);
-  }
-
 }
