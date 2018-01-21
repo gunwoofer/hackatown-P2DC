@@ -1,4 +1,4 @@
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { Challenge } from './challenge';
 import { ListeChallengeService } from './listeChallenge.service';
 import { Component, OnInit } from '@angular/core';
@@ -11,6 +11,7 @@ import { Component, OnInit } from '@angular/core';
 export class ListeChallengeComponent implements OnInit {
 
     public listeChallenge: Challenge[];
+
     constructor(private listeChallengeService: ListeChallengeService, private router: Router) { }
 
     public ngOnInit() {
@@ -20,6 +21,10 @@ export class ListeChallengeComponent implements OnInit {
 
     public back(): void {
         this.router.navigateByUrl('home');
+    }
+
+    public moreInfo(challenge: Challenge): void {
+        this.router.navigate(['/map', challenge.adresse]);
     }
 
 

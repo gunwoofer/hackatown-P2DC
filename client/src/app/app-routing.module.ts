@@ -11,7 +11,7 @@ import { UserCardComponent } from './user-card/user-card.component';
 const routes: Routes = [
   { path: '', component: WelcomeComponent },
   { path: 'home', component: HomeComponent },
-  { path: 'map', component: MapLocationComponent },
+  { path: 'map/:adresse', component: MapLocationComponent },
   { path: 'description', component: DescriptionComponent },
   { path: 'login', component: LoginComponent },
   { path: 'user', component: UserCardComponent },
