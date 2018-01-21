@@ -4,21 +4,23 @@
 </div>
 
 <agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="13">
-  <agm-marker class="mapMarker" *ngFor="let challenge of challenges;" [latitude]="challenge.latitude" [longitude]="challenge.longitude" [label]="challenge.name">
-    <agm-info-window >
-
-      <div class="marker-info">
-        <!--<a (click)="onClickInfoView({id:m.id})" class="btn btn-attention pull-right">test<i class="fa fa-angle-double-right"></i></a>-->
-        <div class="title"> {{challenge.titre}}     <span class="salary">{{challenge.salaire}}$</span></div>
-        <div class="adress">{{challenge.adresse}}</div>
-
-        <div class="description">{{challenge.description}}</div>
-
-        <div class="lienProfile"><a (click)="afficherAuthor(challenge)">Take challenge</a></div>
-
-      </div>
-
-    </agm-info-window>
-  </agm-marker>
+    <agm-marker class="mapMarker" *ngFor="let challenge of challenges;" [latitude]="challenge.latitude" [longitude]="challenge.longitude" [label]="challenge.name">
+        <agm-info-window>
+            <div class="marker-info">
+                <!--<a (click)="onClickInfoView({id:m.id})" class="btn btn-attention pull-right">test<i class="fa fa-angle-double-right"></i></a>-->
+                <div class="title"> {{challenge.titre}} <span class="salary">{{challenge.salaire}}$</span></div>
+                <div class="adress">{{challenge.adresse}}</div>
+                <div class="description">{{challenge.description}}</div>
+                <a (click)="afficherAuthor(challenge)" class="lienProfile">Take challenge</a>
+            </div>
+        </agm-info-window>
+    </agm-marker>
 </agm-map>
+<<<<<<< HEAD
 </div>
+=======
+
+<div class="containerCenter">
+    <button id="buttonReleveDefi">Take the challenge</button>
+</div>
+>>>>>>> 0b34ffc54b2d44f4332712520f85cb2ac4682626
