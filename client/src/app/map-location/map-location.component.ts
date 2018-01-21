@@ -47,7 +47,15 @@ export class MapLocationComponent implements OnInit {
     }
 
     public back(): void {
-        this.router.navigateByUrl('/liste');
+      this.router.navigate(['home']);
+    }
+
+    public listeElements(): void {
+      this.router.navigate(['liste']);
+    }
+
+    public showProfile(): void {
+      this.router.navigate(['profile']);
     }
 
     public afficherAuthor(challenge : Challenge) {

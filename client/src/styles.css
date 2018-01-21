@@ -2,3 +2,25 @@
 body {
   height: 100%;
 }
+
+
+.toolbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 50px;
+  margin: auto;
+  align-items: center;
+  background-color: #3665AA;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.mapDiv {
+  height: 100%;
+}
+

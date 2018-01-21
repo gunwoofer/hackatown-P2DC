@@ -1,4 +1,11 @@
-<agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="13">
+<div class="toolbar">
+  <div (click)="back()" class="flex-grow-1"><i  class="fa fa-chevron-left fa-2x "></i></div>
+  <span style="flex-grow: 4"></span>
+  <div (click)="listeElements()" class="flex-grow-1"><i  class="fa fa-th-list fa-2x "></i></div>
+  <div (click)="showProfile()" class="flex-grow-1"><i class="fa fa-user fa-2x "></i></div>
+</div>
+
+<div class="mapDiv"><agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="13">
     <agm-marker class="mapMarker" *ngFor="let challenge of challenges;" [latitude]="challenge.latitude" [longitude]="challenge.longitude" [label]="challenge.name">
         <agm-info-window>
             <div class="marker-info">
@@ -10,8 +17,8 @@
             </div>
         </agm-info-window>
     </agm-marker>
-</agm-map>
+</agm-map></div>
 <br>
-<div class="containerCenter">
-    <button class="button primary" id="buttonReleveDefi" (click)="back()"> Back </button>
-</div>
+<!--<div class="containerCenter">-->
+    <!--<button class="button primary" id="buttonReleveDefi" (click)="back()"> Back </button>-->
+<!--</div>-->
