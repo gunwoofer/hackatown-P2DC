@@ -1,7 +1,7 @@
 export class Challenge {
 
+    public adresse: string;
     private titre: string;
-    private adresse: string;
     private auteur: string;
     private salaire: number;
     private description: string;
