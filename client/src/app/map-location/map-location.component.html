@@ -6,10 +6,16 @@
   <agm-marker class="mapMarker" *ngFor="let challenge of challenges;" [latitude]="challenge.latitude" [longitude]="challenge.longitude" [label]="challenge.name">
     <agm-info-window >
 
-      <div>
+      <div class="marker-info">
         <!--<a (click)="onClickInfoView({id:m.id})" class="btn btn-attention pull-right">test<i class="fa fa-angle-double-right"></i></a>-->
-        Test
+        {{challenge.titre}}
+        {{challenge.adresse}}
+        {{challenge.salaire}}
+        {{challenge.description}}
+        {{challenge.auteur}}
+
         <a>Take challenge</a>
+
       </div>
 
     </agm-info-window>

@@ -1,6 +1,7 @@
 import { Http } from '@angular/http';
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
+import { tableauChallenges } from '../listeChallenge/challenge';
 
 declare var google;
 
@@ -15,11 +16,14 @@ export class MapLocationComponent implements OnInit {
     public adresse: string;
     public latitude: number = 45.4978601;
     public longitude: number = -73.6296451;
-    public challenges: any[] = [
+    public challenges: any[] = tableauChallenges;
+      /*[
       {longitude : -73.6296451, latitude : 45.4978601, name : 'baleu'},
       {longitude : 12, latitude : 6, name : 'baleu'},
       {longitude : 12, latitude : 6, name : 'baleu'}
-    ]
+    ]*/
+
+
 
     constructor(private router: Router, private route: ActivatedRoute, private http: Http) {
       // this.challenges

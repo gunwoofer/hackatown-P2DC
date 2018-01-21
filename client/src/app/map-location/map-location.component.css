@@ -7,7 +7,7 @@ agm-map {
 }
 
 #buttonReleveDefi {
-    
+
     margin-bottom: 0px;
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
@@ -30,3 +30,7 @@ agm-map {
       height: 100%;
   }
 
+
+  .marker-info {
+
+  }
