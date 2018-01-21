@@ -1,23 +1,19 @@
 import { Injectable, OnInit } from '@angular/core';
-import { Subject } from 'rxjs/Subject';
 
 @Injectable()
-export class UserCardService implements OnInit {
+export class UserCardService {
 
   public userId;
-  private changementUserId = new Subject<number>();
-  public changementUserIdObservable = this.changementUserId.asObservable();
+  //private changementUserId = new Subject<number>();
+  //public changementUserIdObservable = this.changementUserId.asObservable();
 
 
   constructor() {
-  }
-
-  ngOnInit(): void {
-    this.userId = 0;
+    this.userId = 5;
   }
 
   public setUserId(userId: number): void {
     this.userId = userId;
-    this.changementUserId.next(userId);
+    //this.changementUserId.next(userId);
   }
 }

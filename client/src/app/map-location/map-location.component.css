@@ -1,3 +1,32 @@
 agm-map {
-    height: 600px;
+    height: 300px;
 }
+
+#retour {
+    margin-bottom: 10px;
+}
+
+#buttonReleveDefi {
+    
+    margin-bottom: 0px;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    height: 80px;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 18px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    max-width: 300px;
+    border-radius: 5px;
+  }
+
+  .containerCenter {
+      width: 100%;
+      height: 100%;
+  }
+

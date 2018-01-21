@@ -19,11 +19,12 @@ export class UserCardComponent implements OnInit {
       userId => {
         this.userProfile = profilesTest [this.userCardService.userId];
       });*/
+    this.userProfile = profilesTest [this.userCardService.userId];
   }
 
   ngOnInit() {
     // this.userProfile = profilesTest [this.userProfileNumber];
-    this.userProfile = profilesTest [0];
+    this.userProfile = profilesTest [this.userCardService.userId];
   }
 
 }

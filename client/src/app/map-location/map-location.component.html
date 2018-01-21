@@ -1,4 +1,13 @@
-<agm-map [latitude]="latitude" [longitude]="longitude" (mapClick)="onChoseLocation($event)">
-    <agm-marker *ngIf="locationChosen" [latitude]="latitude" [longitude]="longitude">
+<div>
+    <button id="retour" class="btn-primary col-xs-offset-1" (click)="back()">Back</button>
+</div>
+
+<agm-map [latitude]="latitude" [longitude]="longitude">
+    <agm-marker [latitude]="latitude" [longitude]="longitude">
     </agm-marker>
 </agm-map>
+
+<div class="containerCenter">
+    
+<button id="buttonReleveDefi">Take the challenge</button>
+</div>
