@@ -32,10 +32,10 @@ export class MapLocationComponent implements OnInit {
 
     public ngOnInit(): void {
 
-        this.route.params.subscribe(params => {
+       /* this.route.params.subscribe(params => {
             this.adresse = params['adresse'];
-         });
-         console.log(this.adresse);
+         });*/
+        /* console.log(this.adresse);
         const self = this;
         const geocoder = new google.maps.Geocoder();
         geocoder.geocode({'address': this.adresse}, function(results, status) {
@@ -47,7 +47,7 @@ export class MapLocationComponent implements OnInit {
               } else {
               alert('Geocode was not successful for the following reason: ' + status);
             }
-        });
+        });*/
     }
 
     public back(): void {

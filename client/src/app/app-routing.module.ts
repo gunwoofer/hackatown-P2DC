@@ -12,6 +12,7 @@ const routes: Routes = [
   { path: '', component: WelcomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'map/:adresse', component: MapLocationComponent },
+  { path: 'map', component: MapLocationComponent },
   { path: 'description', component: DescriptionComponent },
   { path: 'login', component: LoginComponent },
   { path: 'user', component: UserCardComponent },

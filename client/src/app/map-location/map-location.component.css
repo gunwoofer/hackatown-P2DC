@@ -1,5 +1,6 @@
 agm-map {
-    height: 300px;
+    height: 400px;
+  min-height: 300px;
 }
 
 #retour {
@@ -48,4 +49,5 @@ agm-map {
 
   .lienProfile {
     text-align: center;
+    width: 100%;
   }
