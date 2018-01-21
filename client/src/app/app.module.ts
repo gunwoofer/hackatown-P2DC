@@ -18,6 +18,7 @@ import { DescriptionComponent } from './description/description.component';
 
 import { FormsModule } from '@angular/forms';
 import { UserCardComponent } from './user-card/user-card.component';
+import { UserCardService } from './user-card/userCard.service';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { UserCardComponent } from './user-card/user-card.component';
   ],
   providers: [
     ListeChallengeService,
-    TaskManagerService
+    TaskManagerService,
+    UserCardService
   ],
   bootstrap: [AppComponent]
 })

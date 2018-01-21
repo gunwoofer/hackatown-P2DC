@@ -1,6 +1,10 @@
 <div class="card">
-  <div class="wrapperB"   [ngStyle]="{'background-image': 'url(' + userProfile.nomPhoto + ') '}"></div>
-  <h1>{{userProfile.name}}</h1>
+  <div class="wrapperB" [ngStyle]="{'background-image': 'url(' + userProfile.nomPhoto + ') '}"></div>
+  <div class="divNameContainer">
+    <h1 class="divName">{{userProfile.name}}</h1>
+    <i *ngIf="userProfile.disabled == true" class="fa fa-wheelchair fa-bold fa-2x"></i>
+  </div>
+
   <p class="title">{{userProfile.title}}</p>
   <!--"background-image: '../assets/gars1.jpg';"-->
   <p>{{userProfile.location}}</p>
@@ -11,5 +15,6 @@
     <a href="#"><i class="fa fa-linkedin"></i></a>
     <a href="#"><i class="fa fa-facebook"></i></a>
   </div>
-  <p><button>Contact</button></p>
+
+  <button>Contact</button>
 </div>
