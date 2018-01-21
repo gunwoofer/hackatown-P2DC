@@ -1,3 +1,4 @@
+import { Challenge } from './../listeChallenge/challenge';
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms/src/directives/ng_form';
