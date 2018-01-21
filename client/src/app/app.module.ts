@@ -1,5 +1,4 @@
 import { ListeChallengeComponent } from './listeChallenge/listeChallenge.component';
-import { TaskManagerService } from './description/taskManager.service';
 import { LoginComponent } from './login/login.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -41,7 +40,6 @@ import { UserCardService } from './user-card/userCard.service';
     HttpModule
   ],
   providers: [
-    TaskManagerService,
     UserCardService
   ],
   bootstrap: [AppComponent]

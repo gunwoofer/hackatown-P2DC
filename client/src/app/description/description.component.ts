@@ -1,4 +1,3 @@
-import { TaskManagerService } from './taskManager.service';
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms/src/directives/ng_form';
@@ -13,7 +12,7 @@ export class DescriptionComponent implements OnInit {
 
   public showSuccess: boolean;
 
-  constructor(private router: Router, private taskManagerService: TaskManagerService) {}
+  constructor(private router: Router) {}
 
 
   public ngOnInit(): void {
