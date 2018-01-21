@@ -34,5 +34,5 @@ export let tableauChallenges: Challenge[] =
     new Challenge('Bloqué devant chez moi', '2591 Rue de Soissons, QC H3T',
                 6, 20, "Jai perdu mes clefs, aidez moi pour rentrer chez moi", 45.508397, -73.622647),
     new Challenge('Recette culinaire', '5634 Avenue Canterbury, QC H3T',
-                7, 60, "Besoin d aide pour cuisiner mon repas", 45.502533, -73.61)
+                7, 60, "Besoin d aide pour cuisiner mon repas", 45.505447, -73.624744)
     ];
