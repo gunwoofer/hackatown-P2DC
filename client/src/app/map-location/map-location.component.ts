@@ -1,7 +1,8 @@
 import { Http } from '@angular/http';
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
-import { tableauChallenges } from '../listeChallenge/challenge';
+import { Challenge, tableauChallenges } from '../listeChallenge/challenge';
+import { UserCardService } from '../user-card/userCard.service';
 
 declare var google;
 
@@ -25,7 +26,7 @@ export class MapLocationComponent implements OnInit {
 
 
 
-    constructor(private router: Router, private route: ActivatedRoute, private http: Http) {
+    constructor(private router: Router, private route: ActivatedRoute, private http: Http, private userCardService: UserCardService) {
       // this.challenges
     }
 
@@ -51,5 +52,10 @@ export class MapLocationComponent implements OnInit {
 
     public back(): void {
         this.router.navigateByUrl('/liste');
+    }
+
+    public afficherAuthor(challenge : Challenge) {
+      this.userCardService.setUserId(challenge.auteur);
+      this.router.navigate(['user']);
     }
 }

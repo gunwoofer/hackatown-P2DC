@@ -2,19 +2,18 @@
     <button id="retour" class="btn-primary col-xs-offset-1" (click)="back()">Back</button>
 </div>
 
-<agm-map [latitude]="latitude" [longitude]="longitude">
+<agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="13">
   <agm-marker class="mapMarker" *ngFor="let challenge of challenges;" [latitude]="challenge.latitude" [longitude]="challenge.longitude" [label]="challenge.name">
     <agm-info-window >
 
       <div class="marker-info">
         <!--<a (click)="onClickInfoView({id:m.id})" class="btn btn-attention pull-right">test<i class="fa fa-angle-double-right"></i></a>-->
-        <div class="title"> {{challenge.titre}}  <span class="salary">{{challenge.salaire}}</span></div>
+        <div class="title"> {{challenge.titre}}     <span class="salary">{{challenge.salaire}}$</span></div>
         <div class="adress">{{challenge.adresse}}</div>
 
         <div class="description">{{challenge.description}}</div>
-        <div class="author">{{challenge.auteur}}</div>
 
-        <a>Take challenge</a>
+        <a (click)="afficherAuthor(challenge)" class="lienProfile">Take challenge</a>
 
       </div>
 
