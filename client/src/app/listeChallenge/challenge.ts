@@ -28,5 +28,5 @@ export let tableauChallenges: Challenge[] =
     new Challenge('Tondre ma pelouse', '3201-3215 Chemin de la Côte-Sainte-Catherine Montréal, QC H3T',
                 5, 12, 'Besoin de quelqun pour tondre ma pelouse', 45.502533, -73.625302),
     new Challenge('Cueillette collective', 'Ecole Polytechnique, QC H3T',
-                4, 0, "Besoin de quelqun pour m'aider à récolter mon materiel de détente récréative", 45.502533, -73.61)
+                3, 0, "Besoin de quelqun pour m'aider à récolter mon materiel de détente récréative", 45.502533, -73.61)
     ];
