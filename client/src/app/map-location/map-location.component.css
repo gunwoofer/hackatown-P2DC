@@ -34,3 +34,14 @@ agm-map {
   .marker-info {
 
   }
+
+  .title {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    font-weight: 800;
+  }
+  
+  .salary {
+    color: #3665aa;
+  }

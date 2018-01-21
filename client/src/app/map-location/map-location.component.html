@@ -8,11 +8,11 @@
 
       <div class="marker-info">
         <!--<a (click)="onClickInfoView({id:m.id})" class="btn btn-attention pull-right">test<i class="fa fa-angle-double-right"></i></a>-->
-        {{challenge.titre}}
-        {{challenge.adresse}}
-        {{challenge.salaire}}
-        {{challenge.description}}
-        {{challenge.auteur}}
+        <div class="title"> {{challenge.titre}}  <span class="salary">{{challenge.salaire}}</span></div>
+        <div class="adress">{{challenge.adresse}}</div>
+
+        <div class="description">{{challenge.description}}</div>
+        <div class="author">{{challenge.auteur}}</div>
 
         <a>Take challenge</a>
 
