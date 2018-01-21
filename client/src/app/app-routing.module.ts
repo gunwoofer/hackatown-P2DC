@@ -1,3 +1,4 @@
+import { ContactComponentComponent } from './contact-component/contact-component.component';
 import { ListeChallengeComponent } from './listeChallenge/listeChallenge.component';
 import { MapLocationComponent } from './map-location/map-location.component';
 import { LoginComponent } from './login/login.component';
@@ -16,8 +17,8 @@ const routes: Routes = [
   { path: 'description', component: DescriptionComponent },
   { path: 'login', component: LoginComponent },
   { path: 'user', component: UserCardComponent },
+  { path: 'contactUser', component: ContactComponentComponent },
   { path: 'liste', component: ListeChallengeComponent }
-
 ];
 
 @NgModule({

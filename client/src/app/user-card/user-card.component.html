@@ -1,20 +1,20 @@
 <div class="card">
-  <div class="wrapperB" [ngStyle]="{'background-image': 'url(' + userProfile.nomPhoto + ') '}"></div>
-  <div class="divNameContainer">
-    <h1 class="divName">{{userProfile.name}}</h1>
-    <i *ngIf="userProfile.disabled == true" class="fa fa-wheelchair fa-bold fa-2x"></i>
-  </div>
+    <div class="wrapperB" [ngStyle]="{'background-image': 'url(' + userProfile.nomPhoto + ') '}"></div>
+    <div class="divNameContainer">
+        <h1 class="divName">{{userProfile.name}}</h1>
+        <i *ngIf="userProfile.disabled == true" class="fa fa-wheelchair fa-bold fa-2x"></i>
+    </div>
 
-  <p class="title">{{userProfile.title}}</p>
-  <!--"background-image: '../assets/gars1.jpg';"-->
-  <p>{{userProfile.location}}</p>
-  <p>{{userProfile.distance}} kms</p>
-  <div style="margin: 24px 0;">
-    <a href="#"><i class="fa fa-dribbble"></i></a>
-    <a href="#"><i class="fa fa-twitter"></i></a>
-    <a href="#"><i class="fa fa-linkedin"></i></a>
-    <a href="#"><i class="fa fa-facebook"></i></a>
-  </div>
+    <p class="title">{{userProfile.title}}</p>
+    <!--"background-image: '../assets/gars1.jpg';"-->
+    <p>{{userProfile.location}}</p>
+    <p>{{userProfile.distance}} kms</p>
+    <div style="margin: 24px 0;">
+        <a href="#"><i class="fa fa-dribbble"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+    </div>
 
-  <button>Contact</button>
+    <button (click)="routingChange()">Contact</button>
 </div>

@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, Input, OnInit } from '@angular/core';
 import { profilesTest, UserProfile } from '../commun/Profile';
 import { UserCardService } from './userCard.service';
@@ -12,7 +13,7 @@ export class UserCardComponent implements OnInit {
   public userProfileNumber: number;
   public userProfile: UserProfile;
 
-  constructor(private userCardService: UserCardService) {
+  constructor(private userCardService: UserCardService, private router: Router) {
     //this.userProfile = userProfile; userProfile : UserProfile
     //this.userProfile = profilesTest [0];
    /* userCardService.changementUserIdObservable.subscribe(
@@ -20,6 +21,10 @@ export class UserCardComponent implements OnInit {
         this.userProfile = profilesTest [this.userCardService.userId];
       });*/
     this.userProfile = profilesTest [this.userCardService.userId];
+  }
+
+  public routingChange(): void {
+    this.router.navigateByUrl('/contactUser');
   }
 
   ngOnInit() {
