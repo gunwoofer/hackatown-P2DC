@@ -3,11 +3,20 @@
 </div>
 
 <agm-map [latitude]="latitude" [longitude]="longitude">
-    <agm-marker [latitude]="latitude" [longitude]="longitude">
-    </agm-marker>
+  <agm-marker class="mapMarker" *ngFor="let challenge of challenges;" [latitude]="challenge.latitude" [longitude]="challenge.longitude" [label]="challenge.name">
+    <agm-info-window >
+
+      <div>
+        <!--<a (click)="onClickInfoView({id:m.id})" class="btn btn-attention pull-right">test<i class="fa fa-angle-double-right"></i></a>-->
+        Test
+        <a>Take challenge</a>
+      </div>
+
+    </agm-info-window>
+  </agm-marker>
 </agm-map>
 
 <div class="containerCenter">
-    
+
 <button id="buttonReleveDefi">Take the challenge</button>
 </div>

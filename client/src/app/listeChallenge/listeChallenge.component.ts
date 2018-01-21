@@ -1,6 +1,5 @@
 import { Router, ActivatedRoute } from '@angular/router';
-import { Challenge } from './challenge';
-import { ListeChallengeService } from './listeChallenge.service';
+import { Challenge, tableauChallenges } from './challenge';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -12,10 +11,10 @@ export class ListeChallengeComponent implements OnInit {
 
     public listeChallenge: Challenge[];
 
-    constructor(private listeChallengeService: ListeChallengeService, private router: Router) { }
+    constructor(private router: Router) { }
 
     public ngOnInit() {
-        this.listeChallenge = this.listeChallengeService.genererChallengeMock();
+        this.listeChallenge = tableauChallenges;
         console.log(this.listeChallenge);
     }
 

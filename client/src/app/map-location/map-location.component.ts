@@ -13,13 +13,20 @@ declare var google;
 export class MapLocationComponent implements OnInit {
 
     public adresse: string;
-    public latitude: number;
-    public longitude: number;
+    public latitude: number = 45.4978601;
+    public longitude: number = -73.6296451;
+    public challenges: any[] = [
+      {longitude : -73.6296451, latitude : 45.4978601, name : 'baleu'},
+      {longitude : 12, latitude : 6, name : 'baleu'},
+      {longitude : 12, latitude : 6, name : 'baleu'}
+    ]
 
     constructor(private router: Router, private route: ActivatedRoute, private http: Http) {
+      // this.challenges
     }
 
     public ngOnInit(): void {
+
         this.route.params.subscribe(params => {
             this.adresse = params['adresse'];
          });

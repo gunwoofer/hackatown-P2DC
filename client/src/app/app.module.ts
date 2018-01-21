@@ -1,4 +1,3 @@
-import { ListeChallengeService } from './listeChallenge/listeChallenge.service';
 import { ListeChallengeComponent } from './listeChallenge/listeChallenge.component';
 import { TaskManagerService } from './description/taskManager.service';
 import { LoginComponent } from './login/login.component';
@@ -42,7 +41,6 @@ import { UserCardService } from './user-card/userCard.service';
     HttpModule
   ],
   providers: [
-    ListeChallengeService,
     TaskManagerService,
     UserCardService
   ],
