@@ -12,4 +12,13 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
+  private clickHelpButton() : void {
+    console.log("clic help me button");
+  }
+
+  private   clickReleveDefiButton() : void {
+    console.log(" releve defi click");
+  }
+
+
 }

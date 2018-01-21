@@ -5,11 +5,11 @@
 }
 
 @keyframes example {
-  0%   {stroke: rgba(246, 10, 64, 0.46); stroke-width:5;}
+  0%   {stroke: rgba(246, 10, 64, 0.46); stroke-width:8;}
   25%  {stroke: rgba(23, 51, 246, 0.7); stroke-width:0;}
-  50%  {stroke: rgba(23, 51, 246, 0.7); stroke-width:5;}
-  75%  {background-color:green; left:0px; top:200px;}
-  100% {fill:red; stroke: rgba(246, 10, 64, 0.46); stroke-width:5;}
+  50%  {stroke: rgba(23, 51, 246, 0.7); stroke-width:8;}
+  75%  {stroke: rgba(84, 246, 58, 0.7); stroke-width:0;}
+  100%   {stroke: rgba(246, 10, 64, 0.46); stroke-width:8;}
 }
 
 .cercleSVG {
@@ -23,7 +23,15 @@
   cy: 50%;
   r: 25%;
   animation-name: example;
-  animation-duration: 4s;
+  animation-duration: 8s;
   animation-iteration-count: infinite;
 }
 
+.buttonReleveDefi {
+  min-width: 100px;
+  max-width: 300px;
+  font-size: 30px;
+  background-color: skyblue;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
