@@ -26,5 +26,7 @@ export let tableauChallenges: Challenge[] =
     new Challenge('Pneu creve', '5355 Chemin de la Côte-des-Neiges Montréal, QC H3T 1Y4',
                 2, 15, 'J ai creve un pneu j ai besoin d aide', 45.497132, -73.622861),
     new Challenge('Tondre ma pelouse', '3201-3215 Chemin de la Côte-Sainte-Catherine Montréal, QC H3T',
-                5, 12, 'Besoin de quelqun pour tondre ma pelouse', 45.502533, -73.625302)
+                5, 12, 'Besoin de quelqun pour tondre ma pelouse', 45.502533, -73.625302),
+    new Challenge('Cueillette collective', 'Ecole Polytechnique, QC H3T',
+                4, 0, "Besoin de quelqun pour m'aider à récolter mon materiel de détente récréative", 45.502533, -73.61)
     ];
