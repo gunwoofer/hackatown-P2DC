@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { Challenge, tableauChallenges } from '../listeChallenge/challenge';
 import { UserCardService } from '../user-card/userCard.service';
+import { MapService } from './map.service';
 
 declare var google;
 
@@ -18,16 +19,16 @@ export class MapLocationComponent implements OnInit {
     public latitude: number = 45.4978601;
     public longitude: number = -73.6296451;
     public challenges: any[] = tableauChallenges;
-      /*[
-      {longitude : -73.6296451, latitude : 45.4978601, name : 'baleu'},
-      {longitude : 12, latitude : 6, name : 'baleu'},
-      {longitude : 12, latitude : 6, name : 'baleu'}
-    ]*/
 
 
 
-    constructor(private router: Router, private route: ActivatedRoute, private http: Http, private userCardService: UserCardService) {
+    constructor(private router: Router, private mapService: MapService, private route: ActivatedRoute, private http: Http, private userCardService: UserCardService) {
       // this.challenges
+    }
+
+    public geoLocation(): void {
+      const location = '2200 rue mansfield';
+      this.mapService.getLocation(location).then((response) => console.log(response.results[0]));
     }
 
     public ngOnInit(): void {

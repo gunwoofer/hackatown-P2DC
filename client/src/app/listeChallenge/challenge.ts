@@ -8,7 +8,13 @@ export class Challenge {
     public longitude: number;
     public latitude: number;
 
-    constructor(titre: string, adresse: string, auteur: number, salaire: number, description: string, latitude: number, longitude: number) {
+    constructor(titre: string, 
+                adresse: string, 
+                auteur: number, 
+                salaire: number, 
+                description: string, 
+                latitude: number, 
+                longitude: number) {
         this.titre = titre;
         this.adresse = adresse;
         this.auteur = auteur;

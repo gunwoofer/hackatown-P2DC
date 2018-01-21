@@ -1,3 +1,4 @@
+import { MapService } from './map-location/map.service';
 import { ListeChallengeComponent } from './listeChallenge/listeChallenge.component';
 import { LoginComponent } from './login/login.component';
 import { BrowserModule } from '@angular/platform-browser';
@@ -40,7 +41,8 @@ import { UserCardService } from './user-card/userCard.service';
     HttpModule
   ],
   providers: [
-    UserCardService
+    UserCardService,
+    MapService
   ],
   bootstrap: [AppComponent]
 })
